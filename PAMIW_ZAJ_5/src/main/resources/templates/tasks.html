@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>New Entities</title>
+</head>
+<body>
+<h1>New Entities</h1>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="newEntity : ${newEntities}">
+            <td th:text="${newEntity.id}">1</td>
+            <td th:text="${newEntity.name}">Sample Name</td>
+            <td th:text="${newEntity.description}">Sample Description</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
