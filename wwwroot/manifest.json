@@ -1,0 +1,16 @@
+{
+  "short_name": "CalculatorApp",
+  "name": "Calculator Progressive Web App",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#000000"
+}

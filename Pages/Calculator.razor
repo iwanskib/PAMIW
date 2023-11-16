@@ -1,0 +1,48 @@
+@page "/calculator"
+
+<h3>Calculator</h3>
+
+<div>
+    <input @bind="firstNumber" type="number" placeholder="First Number"/>
+    <input @bind="secondNumber" type="number" placeholder="Second Number"/>
+
+    <button @onclick="Add">+</button>
+    <button @onclick="Subtract">-</button>
+    <button @onclick="Multiply">*</button>
+    <button @onclick="Divide">/</button>
+
+    <p>Result: @result</p>
+</div>
+
+@code {
+    private double firstNumber;
+    private double secondNumber;
+    private double result;
+
+    private void Add()
+    {
+        result = firstNumber + secondNumber;
+    }
+
+    private void Subtract()
+    {
+        result = firstNumber - secondNumber;
+    }
+
+    private void Multiply()
+    {
+        result = firstNumber * secondNumber;
+    }
+
+    private void Divide()
+    {
+        if (secondNumber != 0)
+        {
+            result = firstNumber / secondNumber;
+        }
+        else
+        {
+            result = double.NaN;
+        }
+    }
+}
