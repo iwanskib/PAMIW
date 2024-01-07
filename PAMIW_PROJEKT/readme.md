@@ -1,5 +1,5 @@
 Projekt z przedmiotu Programowanie aplikacji mobilnych i webowych.
-Jest to strona internetowa umorzliwiająca zarządzanie systemem bibliotecznym.
+Jest to strona internetowa umożliwiająca zarządzanie systemem bibliotecznym.
 
 Zrealizowane punkty:
 - Spójność wizualna
